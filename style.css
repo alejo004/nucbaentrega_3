@@ -26,20 +26,24 @@ body {
 header {
 	background: var(--bg);
 	width: 100%;
+	max-width: 1400px;                        
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 70px;
-	padding: 0 30px;
+	padding: 0 20px;
 	top: 0;
 	border-bottom: 1px solid var(--negrito);
-	position: fixed;
+	position: sticky;
 	z-index: 10;
 }
+
+/* PULIR NAV */
 
 .logo-iso-cont {
 	display: flex;
 	align-items: center;
+	justify-content: space-around;
 	gap: 10px;
 	color: var(--rojito);
 }
@@ -60,7 +64,7 @@ header {
 }
 
 .nav {
-	gap: 150px;
+	gap: 100px;
 }
 
 .nav-list {
@@ -84,17 +88,24 @@ header {
 
 /* HERO */ 
 
+.hero-container__img {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+}
 
 .hero {
-	height: 100vh;
+	z-index: 8;
+	position: relative;
 	width: 100%;
 	display: flex;
 	justify-content: right;
 	align-items: center;
 	padding: 0 20px;
-	background-image: url(assets/kawa2.jpg);
+	/* background-image: url(assets/kawa2.jpg);
 	background-position: top;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 	border-bottom: 1px solid var(--negrito) ;
 }
 
