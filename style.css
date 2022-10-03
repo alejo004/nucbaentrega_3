@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Oswald:wght@300&family=Poppins:wght@400;500;600;700&family=Roboto:wght@100&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Oswald:wght@300&family=Poppins:wght@100;200;400;500;600;700&family=Roboto:wght@100&family=Ubuntu&display=swap');
+
 * {
 	font-family: poppins, sans-serif;
 	padding: 0;
@@ -36,6 +37,11 @@ header {
 	border-bottom: 1px solid var(--negrito);
 	position: sticky;
 	z-index: 10;
+}
+
+header i {
+	color: var(--rojito);
+	font-size: 20px;
 }
 
 /* PULIR NAV */
@@ -84,74 +90,71 @@ header {
 	background-color:var(--sombra);
 }
 
+
+#menu-toggle, .menu-label {
+	display: none;
+}
+
 /* NAVBAR */ 
 
 /* HERO */ 
 
-.hero-container__img {
-	position: absolute;
-	width: 100%;
-	height: 100vh;
-	background-size: cover;
-}
 
-.hero {
-	z-index: 8;
-	position: relative;
-	width: 100%;
+.portada-contenedor {
 	display: flex;
-	justify-content: right;
+	justify-content: space-around;
 	align-items: center;
 	padding: 0 20px;
-	/* background-image: url(assets/kawa2.jpg);
-	background-position: top;
-	background-repeat: no-repeat; */
-	border-bottom: 1px solid var(--negrito) ;
+	height: 100vh;
+	border-bottom: 1px solid var(--negrito);
+	max-width: 1400px;
 }
 
-.hero_info {
-	padding: 25px;
+.portada-contenedor__img {
+	width: 600px;
+	max-width: 40%;
+}
+
+.portada-info__img {
+	max-width: 300px;
+}
+
+.portada-info {
+	width: 40%;
+	max-width: 500px;
+	height: 100vh;
+	max-height: 700px;
 	display: flex;
 	flex-direction: column;
-	width: 40%;
-	height: 100vh;
-	background: rgba(0, 0, 0, .5);
-	align-items: center;
 	justify-content: space-around;
-	border: none;
-	border-left: 1px solid var(--negrito);
+	align-items: center;
+	text-align: center;
+	padding: 0 20px;
+	background: var(--sombra);
 	border-right: 1px solid var(--negrito);
+	border-left: 1px solid var(--negrito);
+	border-bottom: 1px solid var(--negrito);
 }
 
-.hero_info img {
-	width: 300px;
-}
-
-.hero_info p {
+.portada-info p {
 	color: #fff;
 }
 
-.hero_info p > span {
-	color: var(--rojito);
-}
-
-.button_container {
+.portada-info__botones {
 	display: flex;
-	gap: 20px;
+	align-items: center;
+	gap: 30px;
 }
 
-.button_container {
-	border: none;
-}
 
-.button_container button {
+.button {
 	background: rgba(0, 0, 0, .5);
 	color: #fff;
 	padding: 7px;
 	border: none;
 }
 
-.button_container button:hover {
+.button:hover {
 	background: var(--sombra);
 	color: #fff;
 	padding: 7px;
@@ -166,7 +169,7 @@ header {
 .moto-info {
 	padding: 30px;
 	height: 400px;
-	width: 1200px;
+	max-width: 1200px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -277,7 +280,6 @@ header {
 
 
 .contacto {
-	margin-top: 40px;
 	height: 500px;
 	display: flex;
 	justify-content: flex-start;
@@ -365,35 +367,52 @@ header {
 /*FOOTER*/
 
 footer {
+	width: 100%;
+	max-width: 1400px;
 	margin-top: 40px;
+	padding: 15px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	text-align: center;
+	margin: auto;
 }
 
 footer img{
 	background: #ccc;
 	width: 200px;
-
 }
 
-.footer_links {
-	width: 80%;
-	height: 200px;
+.links-contenedor{
+	text-align: center;
+	margin: 40px 0;
 	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	gap: 20px;
+}
+
+.links {
+	display: flex;
+	align-items: center;
 	justify-content: space-between;
-	align-items: center;
-	margin: auto;
-	font-size: 13px;
+	width: 100%;
+	gap: 20px;
+	flex-wrap: wrap;
 }
 
-.links{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 5px;
+.copy p {
+	font-size: 15px;
+	font-weight: 100;
+	color: #fff
 }
 
+
+
+
+/*
 .links a:visited {
 	color: #ccc;
 }

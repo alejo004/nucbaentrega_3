@@ -1,8 +1,96 @@
 @media (max-width:992px) {
-    header {
+    .nav {
+        gap: 10px;
+    }
+    .nav-list {
+        position: absolute;
+        top: 70px;
+        left: 10%;
+        right: 10%;
+        width: 80%;
+        flex-direction: column;
+        background: var(--bg);
+        border: 1px solid var(--rojito);
+        border-top: none;
+        padding: 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none; 
+    }
+    .nav-list a {
+        font-size: 18px;
+    }
+    .list-item a {
+        color: #ccc;
+    }
+    .menu-label {
+        display: flex;
+        cursor: pointer;
+    }
+    #menu-toggle:checked + .nav-list {
+        display: flex;
+    }
+    .portada-info {
+        width: 70%;
+    }
+    .portada-contenedor__img {
         display: none;
     }
-    .hero-container img {
-        display: none;
+    .moto-info h3 {
+        font-size: 44px;
+    }
+    .footer-links {
+    }
+    .contacto {
+         justify-content: center;
+    }
+    .contacto-container {
+        background: var(--sombra);
+        border: 1px solid #000;
+    }
+}
+@media (max-width: 576px) {
+    .portada-info {
+        width: 90%;
+    }
+    .portada-info__img {
+        width: 80%;
+    }
+    .portada-info p {
+        font-size: 16px;
+    }
+    .moto-info {
+        flex-direction: column;
+        justify-content: space-around;
+        gap: unset;
+    }
+    .moto-info h3 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .cards {
+        margin-top: 30px;
+    }
+    .cards h2 {
+        font-size: 30px;
+    }
+    .contacto {
+        background-image: unset;
+    }
+    .contacto-container{
+        flex-direction: column;
+        gap: 30px;
+        height: 100%;
+        padding: 10px;
+    }
+    .contacto-info {
+        gap: 5px;
+    }
+    .contacto-info h3 {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    footer {
+        width: 100%;
     }
 }
