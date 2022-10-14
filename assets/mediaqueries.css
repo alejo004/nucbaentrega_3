@@ -30,8 +30,9 @@
     #menu-toggle:checked + .nav-list {
         display: flex;
     }
-    .portada-contenedor {
+    #portada-contenedor {
         position: relative;
+        justify-content: center;
     }
     .portada-info {
         width: 70%;
@@ -44,7 +45,7 @@
     }
     .footer-links {
     }
-    .contacto {
+    #contacto {
          justify-content: center;
     }
     .contacto-container {
@@ -52,6 +53,12 @@
         border: 1px solid #000;
     }
 }
+@media  (max-width: 775px) {
+    #portada-contenedor {
+        background: var(--bg);
+    }
+}
+
 @media (max-width: 576px) {
     .portada-info {
         width: 90%;
@@ -71,13 +78,13 @@
         font-size: 35px;
         text-align: center;
     }
-    .cards {
+    #cards {
         margin-top: 30px;
     }
-    .cards h2 {
+    #cards h2 {
         font-size: 30px;
     }
-    .contacto {
+    #contacto {
         background-image: unset;
         height: 600px;
     }
@@ -98,5 +105,8 @@
     }
     footer {
         width: 100%;
+    }
+    .links {
+        flex-direction: column;
     }
 }
